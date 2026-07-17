@@ -57,7 +57,7 @@
                 <h1 class="fw-normal display-4 mb-3 text-shadow">WE CREATE <br> YOU PLAY EVERYDAY</h1>
                 <div class="bg-white m-4" style="height: 1.5px; width: 30%;"></div>
                 <p class="lead fw-normal mb-4">
-                    DKID STUDIO ROBLOX, Sebuah studio game berbasis Roblox, berdiri sejak tahun 2022
+                    DUNIA KERETA INDONESIA STUDIO adalah salah satu studio game yang mengusung konsep kereta api di Indonesia, resmi berdiri sejak tahun 2022
                 </p>
                 <a class="btn btn-primary btn-lg px-4" href="https://discord.gg/hfRD2Ej4ru" target="_blank">Join
                     Discord</a>
@@ -75,7 +75,7 @@
                         <h2 class="display-6 fw-bold mb-4">Passion, Imagination<br>Creation</h2>
                         <p class="text-secondary mb-5"
                             style="color: #a0aec0 !important; line-height: 1.6; font-size: 0.95rem;">
-                            Selamat datang di Website Official DKID STUDIO ROBLOX, Studio ini Berdiri sejak 18 Februari 2022 di bawah dedikasi NgebagJB, kami berfokus menciptakan dunia perkeretaapian Indonesia yang imersif dan menyenangkan di platform Roblox. Kami sangat menghargai setiap saran dan kritik dari Anda demi menciptakan pengalaman bermain yang jauh lebih baik
+                            Selamat datang di Website Official DUNIA KERETA INDONESIA STUDIO, Studio ini Berdiri sejak 18 Februari 2022 di bawah dedikasi NgebagJB, kami berfokus menciptakan dunia perkeretaapian Indonesia yang imersif dan menyenangkan. Kami sangat menghargai setiap saran dan kritik dari Anda demi menciptakan pengalaman bermain yang jauh lebih baik
                         </p>
 
                         <div class="row g-3 text-center text-lg-start">

@@ -13,7 +13,7 @@
                     </p>
                     <br>
                     <p class="text-secondary small m-0" style="color: #a0aec0 !important;">
-                        Situs ini adalah situs resmi yang dikelola oleh Dunia Kereta Indonesia Studio sebagai wadah informasi, komunitas, dan pengembang permainan simulasi virtual "Dunia Kereta Indonesia". Situs ini tidak berafiliasi, tidak didukung, dan tidak memiliki hubungan kerja sama resmi dengan perusahaan transportasi kereta api nyata mana pun maupun platform pihak ketiga. Seluruh aset visual, logo, dan nama yang menyerupai layanan kereta api nyata di dalam situs ini digunakan semata-mata untuk keperluan simulasi permainan kreatif (user-generated content) dan hiburan
+                        Situs ini adalah situs resmi yang dikelola oleh Dunia Kereta Indonesia Studio sebagai wadah informasi, komunitas, dan pengembang permainan simulasi virtual "Dunia Kereta Indonesia". Situs ini tidak berafiliasi, tidak didukung, dan tidak memiliki hubungan kerja sama resmi dengan perusahaan transportasi kereta api nyata mana pun maupun platform pihak ketiga. Seluruh aset visual, logo, dan nama yang menyerupai layanan kereta api nyata di dalam situs ini digunakan semata-mata untuk keperluan simulasi permainan kreatif dan hiburan
                     </p>
                 </div>
 

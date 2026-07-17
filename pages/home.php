@@ -75,10 +75,7 @@
                         <h2 class="display-6 fw-bold mb-4">Passion, Imagination<br>Creation</h2>
                         <p class="text-secondary mb-5"
                             style="color: #a0aec0 !important; line-height: 1.6; font-size: 0.95rem;">
-                            DKID Studio hadir sebagai studio game kreatif di platform Roblox yang menghidupkan simulasi
-                            perkeretaapian Indonesia secara autentik dan mendalam. Kami bergerak dengan satu misi besar:
-                            membuktikan kepada dunia bahwa karya digital anak bangsa siap memimpin dan bersaing di pasar
-                            global.
+                            Selamat datang di Website Official DKID STUDIO ROBLOX, Studio ini Berdiri sejak 18 Februari 2022 di bawah dedikasi NgebagJB, kami berfokus menciptakan dunia perkeretaapian Indonesia yang imersif dan menyenangkan di platform Roblox. Kami sangat menghargai setiap saran dan kritik dari Anda demi menciptakan pengalaman bermain yang jauh lebih baik
                         </p>
 
                         <div class="row g-3 text-center text-lg-start">

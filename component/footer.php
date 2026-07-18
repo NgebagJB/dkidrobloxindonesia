@@ -5,7 +5,7 @@
 
                 <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
                     <div class="mb-3">
-                        <img src="../images/other/Logo.png" alt="DKID Logo" class="img-fluid"
+                        <img src="../Images/other/logo.png" alt="DKID Logo" class="img-fluid"
                             style="max-height: 45px; object-fit:contain">
                     </div>
                     <p class="text-secondary small m-0" style="color: #a0aec0 !important;">

@@ -31,7 +31,7 @@
                         <a class="nav-link text-white" href="contact">Contact</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-white" href="#">DKID Nextgen</a>
+                        <a class="nav-link text-white" href="https://nextgen.duniakeretaindonesia.com/">DKID Nextgen</a>
                     </li>
                 </ul>
             </div>

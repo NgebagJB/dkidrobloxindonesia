@@ -145,7 +145,7 @@
                             <p class="card-text text-secondary mb-4" style="font-size: 0.9rem; line-height: 1.5; color: #a0aec0 !important;">
                                 This game focuses on simulating travel by Indonesian trains, offering a realistic virtual experience just like the real thing
                             </p>
-                            <a href="" target="_blank" class="btn btn-outline-light rounded-pill px-5 btn-sm" style="opacity: 0.9;">View Schedule</a>
+                            <a href="https://nextgen.duniakeretaindonesia.com/" target="_blank" class="btn btn-outline-light rounded-pill px-5 btn-sm" style="opacity: 0.9;">View Schedule</a>
                         </div>
                     </div>
                 </div>

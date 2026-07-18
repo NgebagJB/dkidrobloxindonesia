@@ -22,8 +22,8 @@
 <section class="py-5">
     <div class="container text-white" style="max-width: 650px;">
         <p class="fst-italic mb-4" style="font-size: 0.9rem; line-height: 1.6; color: #e2e8f0;">
-            *Catatan: Demi kenyamanan bersama, mohon gunakan formulir di bawah ini dengan bijak dan sampaikan pesan Anda
-            menggunakan bahasa yang sopan. Terima kasih atas kerja sama Anda.
+            *Note: For mutual comfort, please use the form below wisely and convey your message
+            using polite language. Thank you for your cooperation.
         </p>
 
         <form id="contactForm" method="POST">
@@ -33,41 +33,41 @@
             </div>
 
             <div class="mb-3">
-                <label for="nama" class="form-label fw-semibold mb-2">Nama</label>
-                <input type="text" class="form-control px-3 py-2" id="nama" name="nama" placeholder="Contoh : Risky" maxlength="50"
+                <label for="nama" class="form-label fw-semibold mb-2">Name</label>
+                <input type="text" class="form-control px-3 py-2" id="nama" name="nama" placeholder="Example : Risky" maxlength="50"
                     style="border-radius: 10px; border: none;">
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label fw-semibold mb-2">Email <span class="text-danger">*</span></label>
-                <input type="email" class="form-control px-3 py-2" id="email" name="email" placeholder="Contoh : risky@gmail.com"
+                <input type="email" class="form-control px-3 py-2" id="email" name="email" placeholder="Example : risky@gmail.com"
                     required maxlength="50" style="border-radius: 10px; border: none;">
             </div>
 
             <div class="mb-3">
-                <label for="topik" class="form-label fw-semibold mb-2">Topik <span class="text-danger">*</span></label>
+                <label for="topik" class="form-label fw-semibold mb-2">Topic <span class="text-danger">*</span></label>
                 <select class="form-select px-3 py-2" id="topik" name="topik" required style="border-radius: 10px; border: none;">
-                    <option value="" selected disabled>Silahkan Dipilih Dulu</option>
-                    <option value="bug">Laporkan Bug</option>
-                    <option value="cheat">Laporkan Pemain</option>
-                    <option value="staff">Laporkan Staff Kami</option>
-                    <option value="saran">Kritik & Saran</option>
-                    <option value="banned">Ajukan Banding</option>
-                    <option value="lainnya">Lainnya</option>
+                    <option value="" selected disabled>Please Select One</option>
+                    <option value="bug">Report a Bug</option>
+                    <option value="cheat">Report a Player</option>
+                    <option value="staff">Report Our Staff</option>
+                    <option value="saran">Feedback & Suggestions</option>
+                    <option value="banned">Submit an Appeal</option>
+                    <option value="lainnya">Others</option>
                 </select>
             </div>
 
             <div class="mb-3">
-                <label for="penjelasan" class="form-label fw-semibold mb-2">Penjelasan <span
+                <label for="penjelasan" class="form-label fw-semibold mb-2">Explanation <span
                         class="text-danger">*</span></label>
                 <textarea class="form-control px-3 py-2" id="penjelasan" name="penjelasan" rows="4"
-                    placeholder="Contoh : saya terkena banned" required maxlength="500"
+                    placeholder="Example : I got banned" required maxlength="500"
                     style="border-radius: 15px; border: none; resize: none;"></textarea>
             </div>
 
             <div class="text-start">
                 <button type="submit" id="btnSubmit" class="btn btn-primary px-4 py-2 fw-semibold"
-                    style="background-color: #ff7b00; border: none; border-radius: 8px;">Kirim Laporan</button>
+                    style="background-color: #ff7b00; border: none; border-radius: 8px;">Submit Report</button>
                 <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 10px;">
                     This site is protected by reCAPTCHA and the Google
                     <a href="https://policies.google.com/privacy" target="_blank" style="color:#94a3b8; text-decoration:underline;">Privacy Policy</a> and

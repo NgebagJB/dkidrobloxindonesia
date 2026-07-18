@@ -18,8 +18,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Owner & Founder</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/2753307425/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <a href="https://www.instagram.com/NgebagJB" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -36,8 +36,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Game Director/HRD</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/2862770608/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <a href="https://www.instagram.com/ytbobby17" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -54,8 +54,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Nextgen Director</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/1506455673/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <a href="https://www.instagram.com/haja.sec" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -72,8 +72,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Public Relation Director</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/956017761/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <a href="https://www.instagram.com/justsukri" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -90,8 +90,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Manager Of Development</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/1289232268/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <!-- <a href="https://www.instagram.com/" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -108,8 +108,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Manager Of Administrative</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/2789720599/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <a href="https://www.instagram.com/adriaannn13f" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -126,8 +126,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Programmer</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/1075581071/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <!-- <a href="https://www.instagram.com/" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -144,8 +144,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Programmer & Animator</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/3655850043/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <a href="https://www.instagram.com/sofarsogood_k_" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -162,8 +162,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Train Modeler</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/2961744484/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <a href="https://www.instagram.com/piki_tukang_blender" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -180,8 +180,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Train Modeler</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.roblox.com/id/users/2690572510/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a>
+                            <a href="https://www.instagram.com/rasikh.a.abieza" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -198,8 +198,8 @@
                         <p class="text-secondary small mb-2" style="font-size: 1rem; color: #a0aec0 !important;">
                             Desain Graphic</p>
                         <div class="d-flex gap-2 text-secondary-50" style="opacity: 0.7;">
-                            <a href="#" class="text-white fs-6"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-6"><i class="bi bi-youtube"></i></a>
+                            <!-- <a href="https://www.roblox.com/id/users/2862770608/profile" target="_blank" class="text-white fs-6" title="Roblox Profile"><i class="bi bi-controller"></i></a> -->
+                            <a href="https://www.instagram.com/dndyeass" target="_blank" class="text-white fs-6" title="Instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
                 </div>

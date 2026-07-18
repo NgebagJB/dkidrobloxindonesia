@@ -2,9 +2,9 @@
 date_default_timezone_set('UTC');
 
 $host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "dkidrobloxindonesia";
+$user = "dkidnext_usrdkidrobloxindonesia";
+$pass = "NgebagJB@123";
+$db   = "dkidnext_dkidrobloxindonesiadb";
 
 $conn = new mysqli($host, $user, $pass, $db);
 

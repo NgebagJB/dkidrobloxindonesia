@@ -105,15 +105,18 @@ if (!$captchaResult['success'] || $captchaResult['score'] < $RECAPTCHA_MIN_SCORE
     exit;
 }
 
+// ==== RATE LIMITING (DIPERBAIKI - tanpa get_result) ====
 $ip = getClientIP();
 
 $stmtCheck = $conn->prepare("SELECT last_attempt, attempt_count FROM admin_rate_limit WHERE ip_address = ?");
 $stmtCheck->bind_param("s", $ip);
 $stmtCheck->execute();
-$resultCheck = $stmtCheck->get_result();
+$stmtCheck->bind_result($lastAttemptDb, $attemptCountDb);
+$adaData = $stmtCheck->fetch();
+$stmtCheck->close();
 
-if ($row = $resultCheck->fetch_assoc()) {
-    $lastAttemptTime = strtotime($row['last_attempt']);
+if ($adaData) {
+    $lastAttemptTime = strtotime($lastAttemptDb);
     $secondsSinceLastAttempt = time() - $lastAttemptTime;
 
     if ($secondsSinceLastAttempt < $COOLDOWN_SECONDS) {
@@ -123,13 +126,13 @@ if ($row = $resultCheck->fetch_assoc()) {
         exit;
     }
 
-    if ($secondsSinceLastAttempt < 3600 && $row['attempt_count'] >= $MAX_ATTEMPT_PER_HOUR) {
+    if ($secondsSinceLastAttempt < 3600 && $attemptCountDb >= $MAX_ATTEMPT_PER_HOUR) {
         $response["message"] = "Terlalu banyak percobaan login gagal. Coba lagi nanti.";
         echo json_encode($response);
         exit;
     }
 
-    $newCount = ($secondsSinceLastAttempt < 3600) ? $row['attempt_count'] + 1 : 1;
+    $newCount = ($secondsSinceLastAttempt < 3600) ? $attemptCountDb + 1 : 1;
     $stmtUpdate = $conn->prepare("UPDATE admin_rate_limit SET last_attempt = NOW(), attempt_count = ? WHERE ip_address = ?");
     $stmtUpdate->bind_param("is", $newCount, $ip);
     $stmtUpdate->execute();
@@ -140,7 +143,6 @@ if ($row = $resultCheck->fetch_assoc()) {
     $stmtInsert->execute();
     $stmtInsert->close();
 }
-$stmtCheck->close();
 
 $username  = trim($_POST['username'] ?? '');
 $password  = trim($_POST['password'] ?? '');
@@ -152,26 +154,27 @@ if (empty($username) || empty($password) || empty($kode_unik)) {
     exit;
 }
 
+// ==== AMBIL DATA ADMIN (DIPERBAIKI - tanpa get_result) ====
 $stmt = $conn->prepare("SELECT id, username, password, kode_unik, discord_message_id FROM admin WHERE username = ?");
 $stmt->bind_param("s", $username);
 $stmt->execute();
-$result = $stmt->get_result();
-$admin = $result->fetch_assoc();
+$stmt->bind_result($adminId, $adminUsername, $adminPassword, $adminKodeUnik, $adminDiscordMsgId);
+$adaAdmin = $stmt->fetch();
 $stmt->close();
 
-if (!$admin) {
+if (!$adaAdmin) {
     $response["message"] = "Username atau password salah.";
     echo json_encode($response);
     exit;
 }
 
-if (!password_verify($password, $admin['password'])) {
+if (!password_verify($password, $adminPassword)) {
     $response["message"] = "Username atau password salah.";
     echo json_encode($response);
     exit;
 }
 
-if ($kode_unik !== $admin['kode_unik']) {
+if ($kode_unik !== $adminKodeUnik) {
     $response["message"] = "Kode unik salah atau sudah kedaluwarsa.";
     echo json_encode($response);
     exit;
@@ -185,14 +188,14 @@ $stmtReset->close();
 $kodeBaru = generateKodeUnik();
 
 $stmtUpdate = $conn->prepare("UPDATE admin SET kode_unik = ? WHERE id = ?");
-$stmtUpdate->bind_param("si", $kodeBaru, $admin['id']);
+$stmtUpdate->bind_param("si", $kodeBaru, $adminId);
 $stmtUpdate->execute();
 $stmtUpdate->close();
 
-kirimKodeUnikDiscord($DISCORD_WEBHOOK_URL, $kodeBaru, $admin['discord_message_id'], $conn);
+kirimKodeUnikDiscord($DISCORD_WEBHOOK_URL, $kodeBaru, $adminDiscordMsgId, $conn);
 
-$_SESSION['admin_id']       = $admin['id'];
-$_SESSION['admin_username'] = $admin['username'];
+$_SESSION['admin_id']       = $adminId;
+$_SESSION['admin_username'] = $adminUsername;
 $_SESSION['login_time']     = time();
 
 $response["status"]   = "success";

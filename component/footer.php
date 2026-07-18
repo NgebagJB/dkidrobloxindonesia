@@ -13,13 +13,12 @@
                     </p>
                     <br>
                     <p class="text-secondary small m-0" style="color: #a0aec0 !important;">
-                        Situs ini adalah situs resmi yang dikelola oleh Dunia Kereta Indonesia Studio sebagai wadah informasi, komunitas, dan pengembang permainan simulasi virtual "Dunia Kereta Indonesia". Situs ini tidak berafiliasi, tidak didukung, dan tidak memiliki hubungan kerja sama resmi dengan perusahaan transportasi kereta api nyata mana pun maupun platform pihak ketiga. Seluruh aset visual, logo, dan nama yang menyerupai layanan kereta api nyata di dalam situs ini digunakan semata-mata untuk keperluan simulasi permainan kreatif dan hiburan
+                        This website is the official site managed by Dunia Kereta Indonesia Studio as a hub for information, community, and developers of the virtual simulation game "Dunia Kereta Indonesia". This site is not affiliated with, endorsed by, or officially associated with any real train transportation company or third-party platforms. All visual assets, logos, and names resembling real train services within this site are used solely for the purpose of creative game simulation and entertainment.
                     </p>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <h5 class="fw-bold mb-3 small text-uppercase" style="letter-spacing: 1px; color: #ffffff;">LINK
-                        CEPAT</h5>
+                    <h5 class="fw-bold mb-3 small text-uppercase" style="letter-spacing: 1px; color: #ffffff;">QUICK LINKS</h5>
                     <ul class="list-unstyled m-0">
                         <li class="mb-2"><a href="/" class="text-secondary text-decoration-none small-link">Home</a>
                         </li>
@@ -42,8 +41,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold mb-3 small text-uppercase" style="letter-spacing: 1px; color: #ffffff;">SOCIAL
-                        MEDIA</h5>
+                    <h5 class="fw-bold mb-3 small text-uppercase" style="letter-spacing: 1px; color: #ffffff;">SOCIAL MEDIA</h5>
                     <ul class="list-unstyled m-0">
                         <li class="mb-2"><a href="https://youtube.com/channel/UCB3RTz62Wt9fm0RiAMXeUfA" class="text-secondary text-decoration-none small-link" target="_blank" >Youtube</a>
                         </li>

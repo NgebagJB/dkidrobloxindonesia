@@ -6,7 +6,7 @@ $filterJenis = trim($_GET['jenis'] ?? '');
 $filterDari  = trim($_GET['dari'] ?? '');
 $filterSampai = trim($_GET['sampai'] ?? '');
 
-$sql = "SELECT * FROM contact_messages WHERE 1=1";
+$sql = "SELECT id, nama, email, topik, penjelasan, ip_address, created_at FROM contact_messages WHERE 1=1";
 $params = [];
 $types = '';
 
@@ -35,11 +35,19 @@ if (!empty($params)) {
     $stmt->bind_param($types, ...$params);
 }
 $stmt->execute();
-$result = $stmt->get_result();
+$stmt->bind_result($id, $nama, $email, $topik, $penjelasan, $ipAddress, $createdAt);
 
 $dataReport = [];
-while ($row = $result->fetch_assoc()) {
-    $dataReport[] = $row;
+while ($stmt->fetch()) {
+    $dataReport[] = [
+        'id'         => $id,
+        'nama'       => $nama,
+        'email'      => $email,
+        'topik'      => $topik,
+        'penjelasan' => $penjelasan,
+        'ip_address' => $ipAddress,
+        'created_at' => $createdAt,
+    ];
 }
 $stmt->close();
 

@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-   ini_set('display_errors', 1);
 header('Content-Type: application/json');
 session_start();
 require "koneksi.php";
@@ -101,16 +99,18 @@ if (!$captchaResult['success'] || $captchaResult['score'] < $RECAPTCHA_MIN_SCORE
     exit;
 }
 
-// ==== 3. RATE LIMITING ====
+// ==== 3. RATE LIMITING (DIPERBAIKI - tanpa get_result) ====
 $ip = getClientIP();
 
 $stmtCheck = $conn->prepare("SELECT last_submit, submit_count FROM contact_rate_limit WHERE ip_address = ?");
 $stmtCheck->bind_param("s", $ip);
 $stmtCheck->execute();
-$result = $stmtCheck->get_result();
+$stmtCheck->bind_result($lastSubmitDb, $submitCountDb);
+$adaData = $stmtCheck->fetch();
+$stmtCheck->close();
 
-if ($row = $result->fetch_assoc()) {
-    $lastSubmitTime = strtotime($row['last_submit']);
+if ($adaData) {
+    $lastSubmitTime = strtotime($lastSubmitDb);
     $secondsSinceLastSubmit = time() - $lastSubmitTime;
 
     if ($secondsSinceLastSubmit < $COOLDOWN_SECONDS) {
@@ -120,13 +120,13 @@ if ($row = $result->fetch_assoc()) {
         exit;
     }
 
-    if ($secondsSinceLastSubmit < 3600 && $row['submit_count'] >= $MAX_SUBMIT_PER_HOUR) {
+    if ($secondsSinceLastSubmit < 3600 && $submitCountDb >= $MAX_SUBMIT_PER_HOUR) {
         $response["message"] = "Anda telah mencapai batas maksimal pengiriman. Coba lagi nanti.";
         echo json_encode($response);
         exit;
     }
 
-    $newCount = ($secondsSinceLastSubmit < 3600) ? $row['submit_count'] + 1 : 1;
+    $newCount = ($secondsSinceLastSubmit < 3600) ? $submitCountDb + 1 : 1;
     $stmtUpdate = $conn->prepare("UPDATE contact_rate_limit SET last_submit = NOW(), submit_count = ? WHERE ip_address = ?");
     $stmtUpdate->bind_param("is", $newCount, $ip);
     $stmtUpdate->execute();
@@ -137,7 +137,6 @@ if ($row = $result->fetch_assoc()) {
     $stmtInsert->execute();
     $stmtInsert->close();
 }
-$stmtCheck->close();
 
 // ==== 4. VALIDASI INPUT ====
 $nama       = trim($_POST['nama'] ?? '');

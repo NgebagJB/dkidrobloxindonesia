@@ -57,6 +57,9 @@ function formatTgl($tanggal, $waktu)
                     <li class="nav-item px-2">
                         <a class="nav-link text-white" href="report.php">Report</a>
                     </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="pengumuman.php">Report</a>
+                    </li>
                 </ul>
             </div>
 

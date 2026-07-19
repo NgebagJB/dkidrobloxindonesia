@@ -97,6 +97,7 @@ function labelTopik($topik) {
                 <li class="nav-item px-2"><a class="nav-link text-white" href="index.php">Home</a></li>
                 <li class="nav-item px-2"><a class="nav-link text-white" href="rekrut.php">Recruitment</a></li>
                 <li class="nav-item px-2"><a class="nav-link text-white" href="report.php">Report</a></li>
+                <li class="nav-item px-2"><a class="nav-link text-white" href="pengumuman.php">Announcement</a></li>
             </ul>
         </div>
     </div>

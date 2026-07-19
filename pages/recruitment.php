@@ -19,7 +19,7 @@ function formatTanggalJam($tanggal, $waktu) {
 ?>
 
 <div class="text-center text-white" style="background-color: #031430; padding-top: 130px; padding-bottom: 120px;">
-    <h2 class="fw-semibold m-0" style="font-size: 3.5rem; letter-spacing: 0.5px;">Recruitment</h2>
+    <h2 class="fw-semibold m-0" style="font-size: 2.5rem; letter-spacing: 0.5px;">Recruitment</h2>
 </div>
 
 <section class="py-5">

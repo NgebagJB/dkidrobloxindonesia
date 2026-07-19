@@ -41,7 +41,7 @@ function formatTanggalPengumuman($datetime)
 <body>
 
     <div class="text-center text-white" style="background-color: #031430; padding-top: 130px; padding-bottom: 120px;">
-        <h2 class="fw-semibold m-0" style="font-size: 3.5rem; letter-spacing: 0.5px;">Announcement</h2>
+        <h4 class="fw-semibold m-0" style="font-size: 3.5rem; letter-spacing: 0.5px;">Announcement</h4>
     </div>
 
     <section class="py-5">

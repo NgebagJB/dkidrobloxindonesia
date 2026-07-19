@@ -16,7 +16,7 @@
                         <a class="nav-link text-white" href="/">Home</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-white" href="home#announcement">Announcement</a>
+                        <a class="nav-link text-white" href="announcement">Announcement</a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link text-white" href="home#project">Projects</a>

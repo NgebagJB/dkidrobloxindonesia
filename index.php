@@ -10,6 +10,8 @@
 
     if ($page == 'home') {
         include "pages/home.php";
+    } elseif ($page == 'announcement') {
+        include "pages/pengumuman.php";
     } elseif ($page == 'team') {
         include "pages/team.php";
     } elseif ($page == 'recruitment') {

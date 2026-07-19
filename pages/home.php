@@ -1,3 +1,30 @@
+<?php
+require __DIR__ . '/../api/koneksi.php';
+
+$resultPengumuman = $conn->prepare("SELECT id, judul, deskripsi, created_at FROM pengumuman ORDER BY created_at DESC LIMIT 2");
+$resultPengumuman->execute();
+$resultPengumuman->bind_result($pId, $pJudul, $pDeskripsi, $pCreatedAt);
+
+$dataPengumuman = [];
+while ($resultPengumuman->fetch()) {
+    $dataPengumuman[] = [
+        'id'         => $pId,
+        'judul'      => $pJudul,
+        'deskripsi'  => $pDeskripsi,
+        'created_at' => $pCreatedAt,
+    ];
+}
+$resultPengumuman->close();
+
+function formatTanggalPengumuman($datetime) {
+    if (!$datetime) return '-';
+    $ts = strtotime($datetime);
+    $hariMap = ['Sunday'=>'Minggu','Monday'=>'Senin','Tuesday'=>'Selasa','Wednesday'=>'Rabu','Thursday'=>'Kamis','Friday'=>'Jumat','Saturday'=>'Sabtu'];
+    $hari = $hariMap[date('l', $ts)];
+    return $hari . ', ' . date('d/m/Y H:i', $ts) . ' WIB';
+}
+?>
+
 <!-- Hero -->
 <section class="position-relative overflow-hidden text-left hero-section" style="min-height: 100vh;">
     <div id="heroCarousel" class="carousel slide carousel-fade position-absolute top-1 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="5000" style="z-index: 0;">
@@ -105,6 +132,45 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Announcement -->
+<section class="py-5 reveal" id="announcement">
+    <div class="container py-4">
+        <div class="p-4 p-md-5 rounded-3 text-white text-center">
+
+            <h2 class="fw-bold mb-2" style="font-size: 2.5rem;">Announcement</h2>
+            <p class="text-white-50 mb-2" style="font-size: 1rem;">Our official announcement</p>
+            <div class="mx-auto mb-5" style="width: 60px; height: 3px; background-color: #ff7b00; border-radius: 2px;"></div>
+
+            <?php if (empty($dataPengumuman)): ?>
+                <p class="text-white-50 py-4">Belum ada pengumuman saat ini.</p>
+            <?php endif; ?>
+
+            <div class="d-flex flex-column gap-3 text-start mb-4">
+                <?php foreach ($dataPengumuman as $item): ?>
+                    <div class="bg-white text-dark p-3 p-md-4" style="border-radius: 10px;">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                            <h6 class="fw-bold text-uppercase mb-1" style="font-size: 0.95rem; letter-spacing: 0.3px;">
+                                <?= htmlspecialchars($item['judul']) ?>
+                            </h6>
+                            <span class="text-muted flex-shrink-0" style="font-size: 0.75rem; white-space: nowrap;">
+                                <?= formatTanggalPengumuman($item['created_at']) ?>
+                            </span>
+                        </div>
+                        <p class="mb-0 text-secondary" style="font-size: 0.9rem; line-height: 1.5; white-space: normal; word-wrap: break-word; overflow-wrap: break-word;">
+                            <?= nl2br(htmlspecialchars($item['deskripsi'])) ?>
+                        </p>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <a href="announcement" class="text-decoration-none fw-bold" style="color: #ff7b00; font-size: 1.1rem;">
+                Read More &gt;&gt;&gt;
+            </a>
+
         </div>
     </div>
 </section>

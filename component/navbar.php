@@ -16,10 +16,10 @@
                         <a class="nav-link text-white" href="/">Home</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-white" href="home#project">Projects</a>
+                        <a class="nav-link text-white" href="home#announcement">Announcement</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link text-white" href="home#Gamepass">Gamepass</a>
+                        <a class="nav-link text-white" href="home#project">Projects</a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link text-white" href="team">Team</a>

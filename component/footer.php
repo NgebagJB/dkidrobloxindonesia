@@ -22,10 +22,10 @@
                     <ul class="list-unstyled m-0">
                         <li class="mb-2"><a href="/" class="text-secondary text-decoration-none small-link">Home</a>
                         </li>
+                        <li class="mb-2"><a href="home#announcement"
+                                class="text-secondary text-decoration-none small-link">Announcement</a></li>
                         <li class="mb-2"><a href="home#project"
                                 class="text-secondary text-decoration-none small-link">Projects</a></li>
-                        <li class="mb-2"><a href="home#Gamepass"
-                                class="text-secondary text-decoration-none small-link">GamePass</a></li>
                         <li class="mb-2"><a
                                 href="team"
                                 class="text-secondary text-decoration-none small-link">Team</a></li>

@@ -7,6 +7,9 @@ $totalRekrutmen = $resultRekrut->fetch_assoc()['total'];
 
 $resultReport = $conn->query("SELECT COUNT(*) AS total FROM contact_messages");
 $totalReport = $resultReport->fetch_assoc()['total'];
+
+$resultAnnouncement = $conn->query("SELECT COUNT(*) AS total FROM pengumuman");
+$totalAnnouncement = $resultAnnouncement->fetch_assoc()['total'];
 ?>
 
 <!DOCTYPE html>
@@ -48,6 +51,9 @@ $totalReport = $resultReport->fetch_assoc()['total'];
                     <li class="nav-item px-2">
                         <a class="nav-link text-white" href="report.php">Report</a>
                     </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="pengumuman.php">Announcement</a>
+                    </li>
                 </ul>
             </div>
 
@@ -76,7 +82,7 @@ $totalReport = $resultReport->fetch_assoc()['total'];
                             <a href="rekrut.php"
                                 class="text-decoration-none text-dark fw-semibold small d-inline-flex align-items-center"
                                 style="font-size: 0.8rem; opacity: 0.7;">
-                                List Data <i class="bi bi-arrow-right ms-1"></i>
+                                Lihat Data <i class="bi bi-arrow-right ms-1"></i>
                             </a>
                         </div>
                     </div>
@@ -99,12 +105,33 @@ $totalReport = $resultReport->fetch_assoc()['total'];
                             <a href="report.php"
                                 class="text-decoration-none text-dark fw-semibold small d-inline-flex align-items-center"
                                 style="font-size: 0.8rem; opacity: 0.7;">
-                                List Data <i class="bi bi-arrow-right ms-1"></i>
+                                Lihat Data <i class="bi bi-arrow-right ms-1"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-md-6 col-sm-12">
+                    <div class="card border-0 bg-white p-4 position-relative d-flex flex-row align-items-start"
+                        style="border-radius: 20px; min-height: 160px;">
+                        <div class="bg-black d-flex align-items-center justify-content-center text-white me-3"
+                            style="width: 70px; height: 70px; border-radius: 12px;">
+                            <i class="bi bi-file-earmark-bar-graph" style="font-size: 2rem;"></i>
+                        </div>
+                        <div class="text-start flex-grow-1">
+                            <span class="text-secondary fw-bold text-uppercase d-block"
+                                style="font-size: 0.75rem; letter-spacing: 0.5px; opacity: 0.8;">Announcement</span>
+                            <h2 class="fw-bold my-1 text-dark" style="font-size: 2.2rem; line-height: 1;"><?= $totalAnnouncement ?></h2>
+                            <small class="text-muted d-block mb-3" style="font-size: 0.75rem;">Announcement yang anda buat</small>
+
+                            <a href="pengumuman.php"
+                                class="text-decoration-none text-dark fw-semibold small d-inline-flex align-items-center"
+                                style="font-size: 0.8rem; opacity: 0.7;">
+                                Lihat Data <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="text-center">
